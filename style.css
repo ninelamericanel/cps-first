@@ -20,6 +20,7 @@
 }
 
 .header-mobile {
+  width: 100%;
   border-bottom: 0.5px solid #d9fff5;
   background-color: white;
 }
@@ -42,7 +43,7 @@
   margin-right: 15px;
 }
 
-.main {
+.body {
   background-color: #f8f8f8;
 }
 
@@ -136,7 +137,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .body {
+  .main {
+    padding: 15px;
+  }
+
+  .header-mobile {
     padding: 15px;
   }
 
@@ -204,7 +209,11 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .body {
+  .main {
+    padding: 25px;
+  }
+
+  .header-mobile {
     padding: 25px;
   }
 
