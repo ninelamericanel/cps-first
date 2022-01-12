@@ -47,10 +47,6 @@
   background-color: #f8f8f8;
 }
 
-.main {
-  width: 100%;
-}
-
 .upper-menu__menu {
   display: flex;
   padding: 0;
@@ -314,4 +310,8 @@
   .header-desktop__title:before {
     left: -30px;
   }
+}
+
+.main {
+  width: 100%;
 }
