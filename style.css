@@ -47,10 +47,6 @@
   background-color: #f8f8f8;
 }
 
-.main__upper-menu {
-  padding: 25px 0;
-}
-
 .upper-menu__menu {
   display: flex;
   padding: 0;
@@ -104,8 +100,11 @@
   white-space: nowrap;
 }
 
-.menu__item__active {
+.menu__item {
   padding: 10px 15px;
+}
+
+.menu__item__active {
   background-color: white;
 
   border: 2px solid #b8ffec;
@@ -142,7 +141,7 @@
   }
 
   .header-mobile {
-    padding: 15px;
+    padding: 10px 15px;
   }
 
   .header-desktop {
@@ -190,6 +189,10 @@
   overflow: hidden;
 }
 
+.main__upper-menu {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .main__information {
     display: flex;
@@ -214,7 +217,7 @@
   }
 
   .header-mobile {
-    padding: 25px;
+    padding: 15px 25px;
   }
 
   .header-desktop {
@@ -273,6 +276,10 @@
   .body {
     padding: 30px;
     background-color: #f8f8f8;
+  }
+
+  .main {
+    margin-top: 30px;
   }
 
   .upper-menu__title,
