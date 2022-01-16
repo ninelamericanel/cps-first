@@ -17,8 +17,6 @@ li {
 }
 
 button {
-  width: 40px;
-  height: 40px;
   padding: 0;
   border: none;
   outline: none;
@@ -26,7 +24,6 @@ button {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border-radius: 50%;
 }
 
 a {

@@ -19,8 +19,14 @@
   font-stretch: normal;
 }
 
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 .header-mobile {
-  width: 100%;
+  box-sizing: border-box;
   border-bottom: 0.5px solid #d9fff5;
   background-color: white;
 }
@@ -43,7 +49,7 @@
   margin-right: 15px;
 }
 
-.body {
+.wrapper {
   background-color: #f8f8f8;
 }
 
@@ -104,7 +110,9 @@
   padding: 10px 15px;
 }
 
-.menu__item--active {
+.menu__item--active,
+.menu__item:focus,
+.menu__item:hover {
   background-color: white;
 
   border: 2px solid #b8ffec;
@@ -113,6 +121,7 @@
 
 .information__text {
   font-weight: 400;
+  font-size: 14px;
 }
 
 .information__text:first-child {
@@ -126,17 +135,19 @@
 }
 
 .read-more__btn {
-  height: 15px;
-  padding: 0;
-  background: url(./img/icon_read_more.svg) no-repeat center;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
 }
 
-.read-more__text {
+.read-more__btn p {
+  margin-left: 10px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
-  .main {
+  .content {
     padding: 15px;
   }
 
@@ -212,7 +223,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .main {
+  .content {
     padding: 25px;
   }
 
@@ -273,12 +284,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .body {
+  .wrapper {
     padding: 30px;
     background-color: #f8f8f8;
   }
 
-  .main {
+  .content {
     margin-top: 30px;
   }
 
@@ -297,6 +308,10 @@
     align-items: center;
   }
 
+  .btn__text {
+    cursor: pointer;
+  }
+
   .header-desktop__another-btn {
     display: flex;
     margin-left: auto;
@@ -312,6 +327,6 @@
   }
 }
 
-.main {
-  width: 100%;
+.content {
+  box-sizing: border-box;
 }
