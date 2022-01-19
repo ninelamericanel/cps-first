@@ -1,20 +1,20 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url("fonts/TTLakesNeue-Regular.woff2") format("woff2");
+  src: url("fonts/TTLakes-Regular.woff") format("woff");
   font-weight: 400;
   font-stretch: normal;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("fonts/TTLakesNeue-Medium.woff2") format("woff2");
+  src: url("fonts/TTLakes-Medium.woff") format("woff");
   font-weight: 500;
   font-stretch: normal;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("fonts/TTLakesNeue-Bold.woff2") format("woff2");
+  src: url("fonts/TTLakes-Bold.woff") format("woff");
   font-weight: 700;
   font-stretch: normal;
 }
@@ -68,6 +68,7 @@ a {
 
 .btn:hover {
   opacity: 0.7;
+  transform: scale(1.2);
 }
 
 .nav__menu {
@@ -77,15 +78,26 @@ a {
 .menu__item {
   display: flex;
   align-items: center;
-}
-
-.menu__item {
-  transition-duration: 500ms;
-}
-
-.menu__item__active,
-.menu__item:hover {
   position: relative;
+}
+
+.menu__item__active {
+  position: relative;
+}
+
+.menu__item:before {
+  display: block;
+  content: "";
+
+  height: 0;
+  width: 0;
+  background-color: #41f6d7;
+  border-radius: 20px;
+
+  position: absolute;
+  left: -20px;
+
+  transition-duration: 500ms;
 }
 
 .menu__item__active:before,
