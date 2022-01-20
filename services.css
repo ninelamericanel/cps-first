@@ -1,4 +1,5 @@
 @font-face {
+  /*dd*/
   font-family: "TT Lakes";
   src: url("fonts/TTLakes-Regular.woff") format("woff");
   font-weight: 400;
@@ -20,19 +21,32 @@
 }
 
 .wrapper {
-  width: 100%;
-  height: 234px;
-  box-sizing: border-box;
+  border-top: 1px solid #D9FFF5;
 }
 
-.swiper-wrapper {
-  width: 240px;
+.swiper-container .swiper-wrapper {
   margin-bottom: 16px;
 }
 
+.swiper-container  {
+  display: flex;
+}
+
+.swiper-container:after {
+  display: block;
+  content: "";
+
+  width: 24px;
+  height: 72px;
+  background-image: linear-gradient(to right, rgba(248, 248, 248, 0.0001), rgba(248, 248, 248, 0.9));
+  position: fixed;
+  right: 0px;
+  z-index: 1;
+}
+
 .swiper-container .swiper-pagination {
-  position: static;
   height: 12px;
+  top: 180px;
   margin-bottom: 22px;
 }
 
@@ -58,26 +72,12 @@
   font-size: 16px;
 }
 
+
 .services {
-  padding: 16px;
-  background-color: #f2f2f2;
-}
-
-.swiper__wrapper {
-  position: relative;
-  display: flex;
-}
-
-.swiper__wrapper:after {
-  display: block;
-  content: "";
-
-  width: 24px;
-  height: 81px;
-  background-image: linear-gradient(#f8f8f8 0.04%, rgba(248, 248, 248, 0.0001));
-
-  position: absolute;
-  right: -16px;
+  padding: 16px 0 0 16px;
+  /*width: 100%;*/
+  /*background-color: #f2f2f2;*/
+  overflow: hidden;
 }
 
 .services__content {

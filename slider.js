@@ -4,8 +4,8 @@ new Swiper(".swiper-container", {
     type: "bullets",
     clickable: true,
   },
-  spaceBetween: 32,
+  // spaceBetween: ,
   // width: 240,
-  slidesPerView: 1.3,
+  slidesPerView: 1.19,
   slidesPerColumn: 1,
 });
